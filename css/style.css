@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    /*Its changes the box model so that it dosen't add border and padding no longer added*/
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    /*Its changes the box model so that it dosen't add border and padding no longer added*/
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: url('../img/body-img.jpg');
+    background-size: cover;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #777;
+    //padding: 3rem;
+}
+
+.navbar {
+    text-align: center;
+    width: 100%;
+    background: blue;
+    font-size: 1.6rem;
+    opacity: .5;
+}
+
+.navbar ul {
+    list-style: none;
+    position: relative;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: white;
+    width: 15rem;
+}
+
+.navbar ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.navbar ul li {
+    float: left;
+    list-style: none;
+}
+
+.navbar ul ul {
+    display: none;
+}
+
+.navbar ul li:hover>ul {
+    display: block;
+}
+
+.navbar ul li:hover {
+    background: black;
+    transition: .3s;
+}
+
+.navbar ul li:hover a {
+    color: white;
+}
+
+.navbar ul ul {
+    background: black;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+}
+
+.navbar ul ul li {
+    float: none;
+    position: relative;
+}
+
+.navbar ul ul li a {
+    padding: 1.5rem;
+    color: white;
+    width: 30rem;
+    text-align: left;
+}
+
+.navbar ul ul li a:hover {
+    background: lightblue;
+    color: black;
+    transition: .3s;
+}
